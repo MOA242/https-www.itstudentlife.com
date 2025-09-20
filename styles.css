@@ -70,6 +70,8 @@ p {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
   color: white;
   display: flex;
   align-items: center;
@@ -77,13 +79,32 @@ p {
   font-size: 1.2em;
 }
 
-/* Front Face */
-.flip-card-front {
-  background-color: #333;
-}
-
 /* Back Face */
 .flip-card-back {
-  background-color: #555;
   transform: rotateY(180deg);
+}
+
+/* Page-specific card images */
+.software-page .flip-card-front {
+  background-image: url('software-front.jpg');
+}
+
+.software-page .flip-card-back {
+  background-image: url('software-back.jpg');
+}
+
+.network-page .flip-card-front {
+  background-image: url('network-front.jpg');
+}
+
+.network-page .flip-card-back {
+  background-image: url('network-back.jpg');
+}
+
+.hardware-page .flip-card-front {
+  background-image: url('hardware-front.jpg');
+}
+
+.hardware-page .flip-card-back {
+  background-image: url('hardware-back.jpg');
 }
