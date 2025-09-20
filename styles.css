@@ -1,0 +1,41 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Page-specific backgrounds */
+.software-page {
+  background-image: url('software.jpg'); /* Replace with actual image filename */
+}
+
+.network-page {
+  background-image: url('network.jpg');
+}
+
+.hardware-page {
+  background-image: url('hardware.jpg');
+}
+
+/* Header and paragraph styling */
+header {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  color: white;
+  padding: 15px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <title>Network</title>
+     <style>
+        .nav-btn {
+            padding: 15px 40px;
+            margin: 10px;
+            font-size: 1.3em;
+            color: #fff;
+            background: #343a40;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #007BFF;
+            cursor: pointer;
+            transition: box-shadow 0.3s;
+        }
+        .nav-btn:hover {
+            box-shadow: 0 0 25px #0ff, 0 0 50px #007BFF;
+            background: #007BFF;
+        }
+    </style>
+</head>
+<body class="network-page">
+    <h1>Network Page</h1>
+     <div>
+        <a href="index.html"><button class="nav-btn">Home Page</button></a>
+        <a href="Hardware.html"><button class="nav-btn">Hardware</button></a>
+        <a href="Software.html"><button class="nav-btn">Software</button></a>
+    </div>
+    <p> Put Information Here!!!</p>
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+    </script>
+</body>
+</html>
