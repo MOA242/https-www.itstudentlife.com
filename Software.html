@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software</title>
+    <style>
+        .glow-btn {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background: #007BFF;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #007BFF;
+            transition: box-shadow 0.3s, background 0.3s;
+            cursor: pointer;
+        }
+        .glow-btn.active {
+            box-shadow: 0 0 30px #0ff, 0 0 60px #0ff, 0 0 90px #00f;
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Software Page</h1>
+    <button class="glow-btn" id="software-btn">Glow Button</button>
+    <script>
+        const btn = document.getElementById('software-btn');
+        btn.addEventListener('mouseenter', function() {
+            btn.classList.add('active');
+        });
+        btn.addEventListener('mouseleave', function() {
+            btn.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
