@@ -144,7 +144,7 @@ p {
 
 .marquee-content {
   display: flex;
-  gap: 10px;
+  gap: 0.5px;
   white-space: nowrap;
   animation: scrollLeft 48s linear infinite;
 }
