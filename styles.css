@@ -137,7 +137,7 @@ p {
 .marquee-container {
   width: 100%;
   overflow: hidden;
-  background-color: #111;
+  background-color: tranparent;
   padding: 10px 0;
   position: relative;
 }
