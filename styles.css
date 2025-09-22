@@ -146,7 +146,7 @@ p {
   display: flex;
   gap: 50px;
   white-space: nowrap;
-  animation: scrollLeft 28s linear infinite;
+  animation: scrollLeft 48s linear infinite;
 }
 
 .marquee-paragraph {
