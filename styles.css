@@ -39,16 +39,24 @@ p {
   line-height: 1.6;
   background-color: rgba(0, 0, 0, 0.4);
 }
-/* Flip Card Container */
+/* Flip Card Layout */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Flip Card Base */
 .flip-card {
+  position: relative;
   background-color: transparent;
   width: 300px;
   height: 200px;
   perspective: 1000px;
-  margin: 20px auto;
 }
 
-/* Inner Card */
+/* Inner Flip Mechanism */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -57,12 +65,12 @@ p {
   transform-style: preserve-3d;
 }
 
-/* Flip on hover */
+/* Flip on Hover */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Front and Back Faces */
+/* Card Faces */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -79,32 +87,80 @@ p {
   font-size: 1.2em;
 }
 
-/* Back Face */
+/* Back Face Flip */
 .flip-card-back {
   transform: rotateY(180deg);
 }
 
-/* Page-specific card images */
-.software-page .flip-card-front {
+/* SOFTWARE PAGE IMAGES */
+.software-page .card1-front {
   background-image: url('software-front.jpg');
 }
-
-.software-page .flip-card-back {
+.software-page .card1-back {
   background-image: url('software-back.jpg');
 }
+.software-page .card2-front {
+  background-image: url('software-front2.jpg');
+}
+.software-page .card2-back {
+  background-image: url('software-back2.jpg');
+}
 
-.network-page .flip-card-front {
+/* NETWORK PAGE IMAGES */
+.network-page .card1-front {
   background-image: url('network-front.jpg');
 }
-
-.network-page .flip-card-back {
+.network-page .card1-back {
   background-image: url('network-back.jpg');
 }
-
-.hardware-page .flip-card-front {
-  background-image: url('hardware-front.jpg');
+.network-page .card2-front {
+  background-image: url('network-front2.jpg');
+}
+.network-page .card2-back {
+  background-image: url('network-back2.jpg');
 }
 
-.hardware-page .flip-card-back {
+/* HARDWARE PAGE IMAGES */
+.hardware-page .card1-front {
+  background-image: url('hardware-front.jpg');
+}
+.hardware-page .card1-back {
   background-image: url('hardware-back.jpg');
+}
+.hardware-page .card2-front {
+  background-image: url('hardware-front2.jpg');
+}
+.hardware-page .card2-back {
+  background-image: url('hardware-back2.jpg');
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #111;
+  padding: 10px 0;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 50px;
+  white-space: nowrap;
+  animation: scrollLeft 20s linear infinite;
+}
+
+.marquee-paragraph {
+  color: #fff;
+  font-size: 1.2rem;
+  min-width: max-content;
+}
+
+/* Animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
