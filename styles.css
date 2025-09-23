@@ -134,33 +134,3 @@ p {
   background-image: url('hardware-back2.jpg');
 }
 
-.marquee-container {
-  width: 100%;
-  overflow: hidden;
-  background-color: transparent;
-  padding: 10px 0;
-  position: relative;
-}
-
-.marquee-content {
-  display: flex;
-  gap: 0.5px;
-  white-space: nowrap;
-  animation: scrollLeft 48s linear infinite;
-}
-
-.marquee-paragraph {
-  color: transparent;
-  font-size: 1.2rem;
-  min-width: max-content;
-}
-
-/* Animation */
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
